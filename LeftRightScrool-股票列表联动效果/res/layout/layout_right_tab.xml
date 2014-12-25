@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#ab5f5f">
+    
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="生产数0"
+        android:gravity="center"
+        android:textSize="18dp"/>
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="生产数1"
+        android:gravity="center"
+        android:textSize="18dp"/>
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="生产数2"
+        android:gravity="center"
+        android:textSize="18dp"/>
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="生产数3"
+        android:gravity="center"
+        android:textSize="18dp"/>
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="生产数4"
+        android:gravity="center"
+        android:textSize="18dp"/>
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="生产数5"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+</LinearLayout>

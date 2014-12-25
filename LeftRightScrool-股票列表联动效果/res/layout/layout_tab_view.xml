@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 此部分是标题部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 左侧标题的父容器 -->
+
+        <LinearLayout
+            android:id="@+id/left_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_left_title" />
+        </LinearLayout>
+
+        <!-- 右侧标题的父容器可实现水平滚动 -->
+
+        <com.thea.guo.leftrightscrool.view.SyncHorizontalScrollView
+            android:id="@+id/title_horsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:id="@+id/right_title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <include layout="@layout/layout_right_tab" />
+            </LinearLayout>
+        </com.thea.guo.leftrightscrool.view.SyncHorizontalScrollView>
+    </LinearLayout>
+
+    <!-- 此部分是内容部分 用ScrollView实现上下滚动效果 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- 左侧内容的父容器 -->
+
+            <LinearLayout
+                android:id="@+id/left_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/left_container_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+
+            <!-- 右侧内容的父容器 实现水平滚动 -->
+
+            <com.thea.guo.leftrightscrool.view.SyncHorizontalScrollView
+                android:id="@+id/content_horsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="@null" >
+
+                <LinearLayout
+                    android:id="@+id/right_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ListView
+                        android:id="@+id/right_container_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </ListView>
+                    
+                </LinearLayout>
+            </com.thea.guo.leftrightscrool.view.SyncHorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

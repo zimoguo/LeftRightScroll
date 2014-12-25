@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/right_item_textview0"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生产数0"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/right_item_textview1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生产数1"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/right_item_textview2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生产数2"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/right_item_textview3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生产数3"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/right_item_textview4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生产数4"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/right_item_textview5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生产数5"
+        android:textSize="18dp" />
+
+</LinearLayout>
